@@ -9,7 +9,7 @@ app.use(helmet.frameguard({
 // Sets "X-XSS-Protection: 0"
 app.use(helmet.xssFilter());
 app.use(helmet.noSniff());
-
+app.use(helmet.ieNoOpen());
 
 
 
