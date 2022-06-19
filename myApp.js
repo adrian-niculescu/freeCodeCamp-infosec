@@ -6,7 +6,8 @@ app.use(helmet.hidePoweredBy());
 app.use(helmet.frameguard({
     action: "deny",
 }));
-
+// Sets "X-XSS-Protection: 0"
+app.use(helmet.xssFilter());
 
 
 
